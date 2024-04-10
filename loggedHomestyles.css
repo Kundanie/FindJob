@@ -1,0 +1,533 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.h2 {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1;
+}
+.Jelentkezésmessage{
+    margin-top: 1rem;
+    z-index: 1;
+    display: none;
+    color: green;
+    background-color: rgb(95, 203, 109);
+    
+    position: sticky;
+    top: 58px;
+    
+    padding-left: 1rem;
+}
+
+h2 {
+    margin-left: 1rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header {
+    z-index: 1;
+
+    width: 100%;
+
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    text-align: center;
+
+    background: linear-gradient(to right, #fd0000, #0025f7);
+
+    color: #fff;
+
+    text-align: center;
+}
+
+.user {
+    display: flex;
+
+    padding: 0 1rem;
+    height: 3vh;
+    width: 15vh;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 15px;
+    right: 9rem;
+    color: #ffffff;
+
+
+}
+
+.usname {
+    display: block;
+
+
+}
+
+.userLogout {
+    display: flex;
+
+    padding: 0 1rem;
+    height: 3vh;
+    width: 15vh;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: 15px;
+    right: 1rem;
+    color: #ffffff;
+}
+
+
+.userLogout img {
+    width: 25px;
+    height: 25px;
+    border: 0px solid rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+.user img {
+    width: 25px;
+    height: 25px;
+    border: 3px solid black;
+    border-radius: 50%;
+
+}
+
+.addeventlogout,
+.addeventlogged {
+
+
+
+    cursor: pointer;
+
+}
+
+.ullenyilo li ul {
+    position: absolute;
+    display: none;
+}
+
+/*progress Bar------------------------------------------------*/
+section {
+
+    height: 10px;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.progress-container {
+
+    width: 100%;
+    height: 10px;
+
+    background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    height: 10px;
+    background: linear-gradient(to left, #5d00fd, #d5b4ff);
+    width: 0%;
+}
+
+/*Jelentkezésein felugrása*/
+.login {
+    position: fixed;
+    top: 30%;
+    left: 38%;
+    background-color: #ffffff0a;
+    z-index: 2;
+    border-radius: 3%;
+
+
+}
+.popup-window {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 1rem;
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    z-index: 2;
+    transition: transform .3s;
+    transform: translateY(-100rem);
+}
+
+/*.popup-hidden{transform: translateY(-100rem);}*/
+.popup-active {
+    transform: translateY(0);
+}
+
+.jelentkezescontainer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20vw;
+    height: 40vh;
+
+    z-index: 2;
+    border-radius: 3%;
+    font-size: larger;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+
+}
+
+/*szűrés*/
+
+
+
+.sortir {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 2rem;
+}
+#szűrésButton{
+    margin-left: 1rem;
+}
+
+.szűrésbutton {
+    height: 60px;
+    width: 200px;
+    border-radius: 3%;
+    color: #ddd;
+    background-color: #183f92; 
+    margin-top: 1rem;
+
+}
+.szűrésbutton:hover {
+    transition: 1s;
+    height: 60px;
+    width: 200px;
+    border-radius: 3%;
+    border: none;
+    color: #0b1e1e;
+    background-color: #8daff85b; 
+    margin-top: 1rem;
+       
+}
+
+.sortir div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+
+}
+
+.telepules div {
+
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+
+
+}
+
+.kategoria div {
+    display: grid;
+    grid-template-columns: 0.1fr 0.1fr;
+    grid-template-rows: 0.1fr 0.1fr;
+    gap: 0.3rem;
+
+
+
+
+}
+
+.kategorianev {
+    justify-content: top;
+    align-items: top;
+
+}
+#menuContent {
+
+
+    background-color: #f9f9f9;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+
+
+
+}
+#menuContent a {
+    display: block;
+    color: #333;
+    padding: 8px 0;
+    text-decoration: none;
+}
+
+#menuContent a:hover {
+    background-color: #ddd;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    display: inline-block;
+}
+
+/*.-.-------------------------------------------------------------*/
+/*Menü*/
+.menü {
+    height: 3rem;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    align-items: center;
+    
+
+    background: linear-gradient(to right, #fd0000, #0025f7);
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+
+}
+
+
+
+a {
+    padding: 4px;
+
+
+}
+.jelentkezButton{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+nav ul li a:hover {
+    padding:19px 4px 12px 4px;
+   transition: .2s;
+    color: #2e1616;
+    background-color: #f7a2a2;
+    
+}
+
+html {
+    background-color: #6797ff5b;
+}
+
+main {
+
+
+    width: 100vw;
+
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #6797ff5b;
+}
+
+.mycontainer {
+    display: grid;
+    justify-content: center;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+.card:hover {
+    scale: 1.02;
+    transition-duration: 0.5s;
+}
+
+.card {
+    display: flex;
+
+
+    flex-direction: column;
+    row-gap: 1rem;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 10px 1px rgba(35, 35, 35, 0.615);
+}
+
+.Submitbutton {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #7f92fa;
+    border-radius: 5%;
+    border: none;
+}
+
+.Submitbutton:hover {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+    background-color: #3b4173;
+    color: white;
+    transition: background-color 0.9s ease;
+    transition: color 0.3s ease;
+}
+
+.hiddenmenü {
+    display: none;
+
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    height: 4vh;
+    background: linear-gradient(to left, #ff6b6b, #3f51b5);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+}
+
+@media (max-width: 1000px) {
+
+
+
+    .mycontainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+
+        grid-gap: 10px;
+        padding: 20px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+
+
+    .mycontainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+
+        grid-gap: 10px;
+        padding: 20px;
+    }
+
+    nav ul ul {
+        display: none;
+    }
+
+    .buttons {
+        display: none;
+    }
+
+    .hiddenmenü {
+        display: flex;
+    }
+
+}
+
+@media(width:600px) {
+
+    .mediamenubutton {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 0.5rem;
+        flex-direction: row;
+        position: sticky;
+        top: 0;
+
+    }
+
+    nav ul ul {
+        display: hidden;
+    }
+
+
+}
+
+@media(max-width:600px) {
+
+    .sortir {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 2rem;
+    }
+
+
+
+}
+
+/*Phone Menü*/
+/*.hidden{
+    display: none;
+}
+.visibility{
+    display: flex;
+}
+@media screen and(max-width:600px) {
+    .hidden{
+        display: flex;
+    }
+    .menü{
+        display: none;
+    }
+    
+}*/

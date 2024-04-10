@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Favicon.ico" type="image/x-icon">
+    <title>Adatvédelmi Nyilatkozat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            background-color: #04AA6D;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10vh;
+        }
+
+        .container {
+            max-width: 50vw;
+            margin: 20px auto;
+            padding: 20px;
+
+            border-radius: 5px;
+            
+            box-shadow: 15px 15px 60px #575454;
+
+            background-color: rgb(200, 211, 221);
+            text-align: justify;
+        }
+
+        body {
+
+            background-color: rgb(160, 144, 144);
+        }
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            transition-duration: 0.4s;
+            font-size: large;
+            padding: 1rem;
+            border-radius: 5%;
+            border: 2px solid green;
+            
+
+        }
+
+        button:hover {
+            background-color: #04AA6D;
+            scale: 1.1;
+            color: white;
+        }
+        .hidden {
+            display: none;
+        }
+
+        
+        .bg{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1326px;
+            background-color: #757575d5;
+            z-index: 9999;
+
+        }
+        
+
+        
+
+        .loader {
+            position: fixed;
+           top: 48%;
+            left: 48%;
+            
+            z-index: 10000;
+
+
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #3498db;
+            width: 120px;
+            height: 120px;
+            -webkit-animation: spin 2s linear infinite;
+            /* Safari */
+            animation: spin 2s linear infinite;
+        }
+
+
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Adatvédelmi nyilatkozat</h1>
+    <div class="container">
+        <h2>Bevezetés</h2>
+        <p>Ez az adatvédelmi nyilatkozat meghatározza az adatgyűjtés, -használat és -védelem gyakorlatát a FindJob által
+            kínált szolgáltatások kapcsán.</p>
+
+        <h2>Az adatgyűjtés módja és célja</h2>
+        <p>Az általunk gyűjtött adatok típusa és célja a következő:</p>
+        <ul>
+            <li><strong>Személyes adatok:</strong> Név, e-mail cím, telefonszám, stb. Ezeket az adatokat csak akkor
+                gyűjtjük, ha önkéntesen megadja őket számunkra, például amikor regisztrál, vásárol vagy kapcsolatba lép
+                velünk.</li>
+            <li><strong>Automatikusan gyűjtött adatok:</strong> IP cím, böngésző típusa, operációs rendszer, stb. Ezeket
+                az
+                adatokat a weboldalunk látogatói aktivitás alapján gyűjtjük, és azokat az elemzés és a weboldal
+                működésének
+                javítása érdekében használjuk fel.</li>
+        </ul>
+
+        <h2>Sütik (Cookies)</h2>
+        <p>A sütik kis adatfájlok, amelyeket a webhely vagy a szolgáltatás, amelyet használ, a böngészőjébe helyez el. A
+            sütik célja többek között a felhasználói élmény javítása, az oldal forgalmának elemzése és a célzott
+            hirdetések
+            megjelenítése. Ön bármikor letilthatja vagy törölheti a sütiket a böngésző beállításaiban.</p>
+
+        <h2>Adatvédelem</h2>
+        <p>Az Ön által megadott személyes adatokat biztonságosan kezeljük, és nem adjuk át harmadik feleknek anélkül,
+            hogy
+            az Ön hozzájárulását előtte ne kérnénk meg, kivéve, ha törvény vagy jogi kötelezettség kötelez erre
+            bennünket.
+        </p>
+
+        <h2>Jogok és választási lehetőségek</h2>
+        <p>Az adatvédelmi nyilatkozatnak tartalmaznia kell a felhasználók jogait és választási lehetőségeit is, például:
+        </p>
+        <ul>
+            <li>A személyes adatok hozzáférhetősége és helyesbítése</li>
+            <li>Adatok törlése</li>
+            <li>Adatok korlátozása</li>
+            <li>Adatok hordozhatósága</li>
+            <li>Adatok kezelése elleni tiltakozás</li>
+            <li>Az adatvédelmi beállítások kezelése</li>
+        </ul>
+
+        <h2>Kapcsolat</h2>
+        <p>Ha kérdése vagy aggálya merül fel az adatvédelmi gyakorlatainkkal kapcsolatban, kérjük, vegye fel velünk a
+            kapcsolatot az alábbi elérhetőségek valamelyikén:</p>
+        <ul>
+            <li>Telefonszám: +36 70 907 2144</li>
+            <li>E-mail cím: kundaniel2005@gmail.com</li>
+
+        </ul>
+        <button>Elfogadom</button>
+        <div class="loader hidden"></div>
+    </div>
+<script>
+    const button=document.querySelector("button");
+    const loader = document.querySelector(".loader");
+    button.addEventListener("click",event=>{
+
+        loader.classList.remove("hidden");
+                document.querySelector("body").innerHTML+='<div class="bg"></div>';
+        setTimeout(event=>{
+            location.href="./home.html  ";
+            
+        },1000)
+        
+
+    })
+</script>
+</body>
+
+</html>

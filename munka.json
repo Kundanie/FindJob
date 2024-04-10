@@ -1,0 +1,75 @@
+{ 
+    "munkahirdetesek": [
+      {
+        "munka_megnevezese": "Webfejlesztő",
+        "fizetes": "900000 Ft - 1200000 Ft/hó",
+        "munkavegzes_helye": "Budapest",
+        "leiras": "A vállalatunk keres tapasztalt webfejlesztőt, aki magas szintű ismerettel rendelkezik a HTML, CSS és JavaScript területén, valamint tapasztalatot szerzett az Angular vagy React keretrendszerek használatában.",
+        "kategória":"Informatika"
+      },
+      {
+        "munka_megnevezese": "Grafikus tervező",
+        "fizetes": "320000 Ft - 440000 Ft/hó",
+        "munkavegzes_helye": "Debrecen",
+        "leiras": "Kreatív és lelkes grafikus tervezőt keresünk, aki jártas az Adobe Creative Suite alkalmazásaiban, és képes ötletes és vonzó grafikákat tervezni a különböző marketingkampányokhoz és promóciókhoz.",
+        "kategória":"Informatika"
+      },
+      {
+        "munka_megnevezese": "Adat analitikus",
+        "fizetes": "600000 Ft - 800000 Ft/hó",
+        "munkavegzes_helye": "Szeged",
+        "leiras": "Adat analitikust keresünk, aki magabiztosan mozog a nagy adatok világában. Tapasztalat szükséges az adatbázisok kezelésében és az adatvizualizációban, valamint jó kommunikációs készség.",
+        "kategória":"Informatika"
+      },
+      {
+        "munka_megnevezese": "Szoftvermérnök",
+        "fizetes": "1000000 Ft - 1500000 Ft/hó",
+        "munkavegzes_helye": "Budapest",
+        "leiras": "Szoftvermérnököt keresünk, aki magabiztosan mozog a Java vagy Python nyelvek terén, és tapasztalatot szerzett a webes alkalmazások fejlesztésében. Előnyt jelent az ismeret a mikroszolgáltatások architektúrájában és a felhőalapú technológiákban.",
+        "kategória":"Informatika"
+      },
+      {
+        "munka_megnevezese": "Digitális marketing szakember",
+        "fizetes": "800000 Ft - 1000000 Ft/hó",
+        "munkavegzes_helye": "Győr",
+        "leiras": "Kreatív és stratégiai gondolkodású digitális marketing szakembert keresünk, aki jártas az online hirdetési platformokban és a keresőoptimalizálásban. Fontos az analitikus gondolkodásmód és a hatékony kampányok tervezése és végrehajtása.",
+        "kategória":"Informatika"
+      },
+      {
+        "munka_megnevezese": "Ügyfélkapcsolati munkatárs",
+        "fizetes": "350000 Ft - 500000 Ft/hó",
+        "munkavegzes_helye": "Szombathely",
+        "leiras": "Az ügyfélkapcsolatok terén jártas és kiváló kommunikációs készségekkel rendelkező munkatársat keresünk. Feladata az ügyfelekkel való kapcsolattartás, problémamegoldás és a megfelelő dokumentáció vezetése.",
+        "kategória":"Közgazdaság"
+      },
+      {
+        "munka_megnevezese": "Elemző",
+        "fizetes": "700000 Ft - 900000 Ft/hó",
+        "munkavegzes_helye": "Kecskemét",
+        "leiras": "Kiemelkedő elemzőt keresünk, aki számszerűsíteni tudja a vállalati folyamatokat és hatékony javaslatokat tesz a hatékonyság növelésére. Jó problémamegoldó készség és analitikus gondolkodás szükséges.",
+        "kategória":"Informatika"
+      },
+      {
+        "munka_megnevezese": "Pénzügyi tanácsadó",
+        "fizetes": "600000 Ft - 750000 Ft/hó",
+        "munkavegzes_helye": "Miskolc",
+        "leiras": "Pénzügyi tanácsadót keresünk, aki segíti ügyfeleinket a megtakarítások, befektetések és hiteltermékek terén. Jó kommunikációs és tárgyalási készség szükséges.",
+        "kategória":"Közgazdaság"
+      },
+      {
+        "munka_megnevezese": "Adminisztrátor",
+        "fizetes": "400000 Ft - 550000 Ft/hó",
+        "munkavegzes_helye": "Eger",
+        "leiras": "Adminisztrátort keresünk, aki hatékonyan kezeli az irodai feladatokat, beleértve az adatrögzítést, dokumentumkezelést és az ügyfélszolgálatot. Pontosság és jó szervezőképesség szükséges.",
+        "kategória":"Közgazdaság"
+      },
+      {
+        "munka_megnevezese": "HR specialist",
+        "fizetes": "550000 Ft - 700000 Ft/hó",
+        "munkavegzes_helye": "Pécs",
+        "leiras": "HR specialistát keresünk, aki felelős a munkaerő-felvételi folyamatokért, a dolgozói teljesítményértékelésért és a munkahelyi konfliktusok kezeléséért. Jó emberi kapcsolatok és problémamegoldó készség szükséges.",
+        "kategória":"Közgazdaság"
+      }
+    ]
+  }
+  
